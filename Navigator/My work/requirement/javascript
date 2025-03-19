@@ -1,0 +1,51 @@
+const searchBar = document.querySelector('.search-bar');
+const searchButton = document.querySelector('.search-btn');
+
+searchButton.addEventListener('click', () => {
+    const query = searchBar.value.trim();
+    if (query) {
+        alert(`Searching for: ${query}`);
+    } else {
+        alert('Please enter a search term.');
+    }
+});
+const downloadButton = document.querySelector('.download-btn');
+
+downloadButton.addEventListener('click', () => {
+    const recipeContent = `
+        Recipe Title: Delicious Dish
+        Steps:
+        1. Chop onions and garlic.
+        2. Heat oil in a pan.
+        3. Add chopped vegetables.
+
+        Ingredients:
+        - Onion
+        - Garlic
+        - Oil
+    `;
+    const blob = new Blob([recipeContent], { type: 'text/plain' });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = 'Recipe.txt';
+    link.click();
+    alert('Recipe downloaded!');
+});
+const raiseHandButton = document.querySelector('.raise-hand');
+
+raiseHandButton.addEventListener('click', () => {
+    alert('You have raised your hand. Please wait for the instructor to respond.');
+});
+
+const chatInput = document.querySelector('.chat-input');
+const sendButton = document.querySelector('.send-btn');
+
+sendButton.addEventListener('click', () => {
+    const message = chatInput.value.trim();
+    if (message) {
+        alert(`You: ${message}`);
+        chatInput.value = ''; 
+    } else {
+        alert('Please type a message before sending.');
+    }
+});

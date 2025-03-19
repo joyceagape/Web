@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Personal Portifolio </title>
+    <link rel="stylesheet" href="styles.css">
+    <!---- Font awesome CND--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css ">
+</head>
+<body>
+   <div class="topnav">
+    <div class="logo">
+        <h2>Thina TSAMBA</h2>
+    </div>
+    <div class="social-links">
+        <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        <a href=" https://x.com"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
+    </div>
+    <div class="Menu-icon">
+     <i class="fa fa-bars"></i>
+    </div>
+    <ul class="navbar">
+     <li><a href="https://animension.to/?type=dub">HOME</a></li>
+      <li> <a href="https://en.wikipedia.org/wiki/Violetta_(TV_series)">About Me</a></li>
+        <li><a href="https://dictionary.cambridge.org/dictionary/french-english/danseur">WHAT I DO </a></li>
+        <li><a href="https://www.justwatch.com/us/tv-show/violetta">Resume</a></li>  
+        <li><a href="https://www.jlcatj.gob.mx/cid-11/the-nutcracker-dance-10-29-72-316539335.html">Blog</a></li>  
+        <li><a href="https://licensing.rura.rw/agent/login">Contact</a></li>                    
+    </ul>
+    </div>
+    <div class="header">
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="profile">
+                    <img src="C:/Users/PC/Downloads/image%20profile.jpg" alt="">
+                    <h2>Thina TSAMBA</h2>
+                </div>
+                <ul class="nav">
+                   <li><a href="https://animension.to/?type=dub">HOME</a></li> 
+                   <li> <a href="https://en.wikipedia.org/wiki/Violetta_(TV_series)">About Me</a></li> 
+                    <li><a href="https://dictionary.cambridge.org/dictionary/french-english/danseur">WHAT I DO </a></li>
+                    <li><a href="#">Resume</a></li>  
+                    <li><a href="#">Blog</a></li>  
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="social">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.tiktok.com"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="hero content">
+                <h4>Welcome</h4>
+                <h1>I'm <span class="input"></span></h1>
+                <h4>Based in USA ,california</h4>
+                <a href="#" class="btw">Hire Me</a>
+            </div>
+        </div>
+    </div>
+    <!---- applying typing effect for title content-- -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.js"></script>
+    <script>
+        var typed=new Typed(".input",{
+            strings:["Thina TSAMBA ", "UX Designer","Web Developper"],
+            typeSpeed: 65,
+            backSpeed:55,
+            loop:true
+        })
+        /*** displaying topnavbar on small screen size ***/
+        let menuicon=document.querySelector(".menu-icon");
+        let navbar=document.querySelector(".navbar");
+        let icon=document.querySelector(".menu-icon i");
+        menuicon.addEventListener("click",function(){
+            navbar.classList.toggle("open");
+            if(icon.classList.contains("fa fa-bars")){
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            }
+            else{
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+        })
+    </script>
+</body>
+</html>

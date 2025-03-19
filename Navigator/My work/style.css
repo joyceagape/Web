@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background-color: hwb(88 1% 85%);
+    color: yellowgreen;
+    padding: 10px 0;
+}
+header .logo h1 {
+    font-size: 2em;
+}
+header nav ul {
+    list-style: none;
+    text-align: right;
+}
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+header nav ul li a {
+    color: hsl(276, 84%, 48%);
+    text-decoration: none;
+    font-size: 1.1em;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+section {
+    padding: 60px 0;
+}
+h2 {
+    text-align:center;
+    margin-bottom: 50px;
+}
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-content .profile-img {
+    width: 50px;
+    border-radius: 25%;
+    margin-right: 20px;
+}
+.about-content .passion-img {
+    width: 50%; 
+    max-width: 400px; 
+    height: auto; 
+    margin-right: 40px; 
+}
+
+.about-content .text {
+    max-width: 600px;
+}
+.portfolio-items {
+    display: flex;
+    justify-content: space-between;
+}
+.portfolio-item {
+    position: relative;
+    width: 30%;
+}
+.portfolio-item a {
+    display: block; 
+}
+.portfolio-item img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.portfolio-item a:hover img {
+    transform: scale(1.05);
+}
+.portfolio-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: hsla(197, 94%, 44%, 0.6);
+    color: hsl(51, 91%, 46%);
+    opacity: 0;
+    padding: 20px;
+    text-align: center;
+    transition: opacity 0.3s;
+}
+.portfolio-item:hover .overlay {
+    opacity: 1;
+}
+
+.skills .skill {
+    margin: 20px 0;
+}
+.skill-bar {
+    height: 8px;
+    background-color: #4caf50;
+    margin-top: 10px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid hsl(0, 82%, 56%);
+    border-radius: 5px;
+}
+form button {
+    background-color: hsl(357, 75%, 68%);
+    color: hwb(308 77% 5%);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: hwb(210 0% 95%);
+}
+footer {
+    background-color: #e909c4;
+    color: hsl(170, 79%, 59%);
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .portfolio-items {
+        flex-direction: column;
+    }
+    .portfolio-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 1.5em;
+    }
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

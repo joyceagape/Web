@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Marthina Huberthe TSAMBA </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1> THM </h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="https://desktop.telegram.org/">About</a></li>
+                    <li><a href="C:/Users/PC/Desktop/Image.Map/image/index.html">Portfolio</a></li>
+                    <li><a href="C:/Users/PC/Desktop/Image.Map/Navigator/image%20gallery/index.html">Skills</a></li>
+                    <li><a href="https://licensing.rura.rw/agent/login">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="about" class="section-padding">
+        <div class="container">
+            <div class="about-content">
+                <img src="C:/Users/PC/Downloads/passion.jpg" alt="Passion" class="passion-img">
+                <div class="text">
+                    <h2>About Me</h2>
+                    <p>Hi! I'm thina , a passionate of dance. I specialize in hip hop, afro and erotic dance. I also sing a little and i'm passionate about mangas. My dream isto combine my passion and my work,while making the people around me happy. I can turn your ideas into reality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="section-padding">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <a href="https://www.nike.com/pt/en/dance?cp=70837268257_search_&Macro=-dance-o-568914862-1178678259416966-e-c----kwd-73667735850628-153367&gclid=fa4e3b192b5d10cf61405c518861b72e&gclsrc=3p.ds&msclkid=fa4e3b192b5d10cf61405c518861b72e" target="_blank"></a>
+                    <img src="C:/Users/PC/Downloads/dance.jpg" alt="Project 1">
+                    <div class="overlay">
+                        <h3>My project </h3>
+                        <p>One life , take a good decision</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://hianime.to/" target="_blank"></a>
+                    <img src="C:/Users/PC/Downloads/love.jpg" alt="anime">
+                    <div class="overlay">
+                        <h3>My hobbies </h3>
+                        <p>You can hardly complain when someone does to you what you do to others!</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <a href="https://www.crazygames.com/" target="_blank"></a>
+                    <img src="C:/Users/PC/Downloads/joke.jpg" alt="joke">
+                    <div class="overlay">
+                        <h3>My pleasure </h3>
+                        <p>Joy is the sun of souls,it enlightens those who possess it and those who receive its rays!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h3>DANCE</h3>
+                    <div class="skill-bar" style="width: 90%;"></div>
+                </div>
+                <div class="skill">
+                    <h3> SING </h3>
+                    <div class="skill-bar" style="width: 85%;"></div>
+                </div>
+                <div class="skill">
+                    <h3>TRAVEL</h3>
+                    <div class="skill-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" id="name" required>
+                <input type="email" placeholder="Your Email" id="email" required>
+                <textarea placeholder="Your Message" id="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="form-message" style="text-align: center; color: #e2870f;"></p>  
+        </div>
+        <script>
+            document.getElementById('contact-form').addEventListener('submit', function(e) {
+                e.preventDefault(); 
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+        
+                if (name && email && message) {
+                    window.location.href = 'https://mail.google.com/mail/u/0/#inbox'; 
+                } else {
+                    document.getElementById('form-message').textContent = 'Please fill out all fields.';
+                }
+            });
+        </script>
+        
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 THM. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
